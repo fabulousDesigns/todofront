@@ -33,17 +33,45 @@ body {
   height: calc(100vh - 100px);
   padding: 17px 23px;
   margin: 25px auto;
-  background: #007bff;
+  display: flex;
+  flex-direction: column;
+}
+
+.top__navigation {
+  width: 100%;
+}
+
+.wrapper__nav {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  align-items: end;
+  justify-content: end;
+  padding: 12px 15px;
+}
+
+.c__btn {
+  padding: 8px 20px;
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--secondary);
+  font-weight: 900;
+  letter-spacing: 2px;
+  border: 0;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;
+  width: 80%;
   margin: 2% auto;
+  padding: 20px 37px;
   overflow-y: auto;
   text-align: center;
   background: var(--light);
+  border-radius: 6px;
 }
 
 td,
