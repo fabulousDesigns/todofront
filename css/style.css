@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Zeyada&display=swap');
+
+:root {
+  --primary: #007bff;
+  --secondary: #f0f0f0;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+* {
+  line-height: calc(1em + 0.5rem);
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light);
+}
+
+.wrapper {
+  width: 80%;
+  height: calc(100vh - 100px);
+  padding: 17px 23px;
+  margin: 25px auto;
+  background: #007bff;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 2% auto;
+  overflow-y: auto;
+  text-align: center;
+  background: var(--light);
+}
+
+td,
+th {
+  padding: 19px 20px;
+  min-width: 200px;
+}
+
+thead tr {
+  background: var(--secondary);
+  color: var(--dark);
+  display: block;
+  position: relative;
+}
+
+tbody {
+  display: block;
+  bottom: 20px;
+  height: 700px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--secondary);
+}
